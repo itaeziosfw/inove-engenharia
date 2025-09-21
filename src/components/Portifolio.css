@@ -1,0 +1,112 @@
+/* cards */
+.portfolio {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+.portfolio h2 {
+  text-align: center;
+  color: #003399;
+  margin-bottom: 40px;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.obra-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.obra-card:hover {
+  transform: translateY(-5px);
+}
+.obra-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.obra-info {
+  padding: 15px;
+}
+.obra-info h3 {
+  color: #003399;
+  margin-bottom: 8px;
+}
+
+/* modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  width: 95%;
+  position: relative;
+  text-align: center;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* carousel dentro do modal */
+.carousel-modal {
+  position: relative;
+  margin: 20px 0;
+}
+.carousel-modal img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+.nav:hover { background: rgba(0,0,0,0.6); }
+
+/* dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background: #003399;
+}

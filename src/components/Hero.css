@@ -1,0 +1,32 @@
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("../assets/pinturahero.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-logo {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #b22222;
+  padding: 18px 30px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.hero .btn:hover {
+  background: #ff3333;
+}

@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #003399;
+  color: white;
+}
+
+.logo {
+  height: 60px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: #ff3333;
+}
